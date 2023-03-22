@@ -4,12 +4,14 @@
 
 <div class="col-sm-10">
     <h3 class="text-white my-5">Home Page</h3>
+    {% for post in posts %}
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4 font-weight-bold">This is Blog Title</h1>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt enim repellat fuga odit temporibus nihil praesentium architecto. Ullam quis, sapiente ducimus quidem alias laudantium dolor omnis quae soluta! Debitis error ab consectetur sint aperiam eveniet quibusdam amet ad illo nam ipsam, doloremque inventore sed blanditiis cum labore nemo iusto in.</p>
+          <h1 class="display-4 font-weight-bold">{{post.title}}</h1>
+          <p class="lead">{{post.desc}}</p>
         </div>
-      </div>
+    </div>
+    {% endfor %}
 </div>
 
 {% endblock content %}
