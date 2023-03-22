@@ -26,4 +26,7 @@ urlpatterns = [
     path("LogIn/", views.LogIn, name='LogIn'),
     path("SignUp/", views.SignUp, name='SignUp'),
     path("LogOut/", views.user_logout, name='LogOut'),
+    path("addpost/", views.add_post, name='addpost'),
+    path("editpost/<int:id>", views.edit_post, name='editpost'),
+    path("delete/<int:id>/", views.delete_post, name='deletepost'),
 ]
