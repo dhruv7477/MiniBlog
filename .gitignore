@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Static files for server
+F:/Coding_Notes/Django/miniblog/staticfiles
